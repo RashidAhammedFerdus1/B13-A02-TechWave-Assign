@@ -185,6 +185,79 @@
    color: #00FF88;
 }
 
+/* reason-section */
+.grid-section {
+   background-color: #230E3D;
+   text-align: center;
+   justify-content: center;
+   padding-bottom: 150px;
+}
+
+.grid-heading {
+   padding-top: 50px;
+   padding-bottom: 50px;
+   font-size: 3rem;
+   font-weight: bold;
+   color: white;
+}
+
+.unknown>* {
+   border: 2px solid #351165;
+   background-color: #351165;
+   border-radius: 30px;
+   padding: 40px;
+}
+
+.first-layout {
+   grid-area: first-layout;
+}
+
+.second-layout {
+   grid-area: second-layout;
+}
+
+.third-layout {
+   grid-area: third-layout;
+}
+
+.fourth-layout {
+   grid-area: fourth-layout;
+}
+
+.fifth-layout {
+   grid-area: fifth-layout;
+}
+
+.first-all {
+   margin-top: 70px;
+}
+
+.logo-h3 {
+   font-size: 24px;
+   color: #ffffff;
+}
+
+.logo-p {
+   font-size: 16px;
+   color: #ffffff;
+   font-weight: lighter;
+   margin-top: 15px;
+}
+
+.unknown {
+   display: grid;
+   gap: 20px;
+   max-width: 1600px;
+   margin: 0 auto;
+   grid-template-areas:
+      "first-layout second-layout second-layout second-layout"
+      "first-layout third-layout third-layout third-layout"
+      "fourth-layout fourth-layout fourth-layout fifth-layout"
+}
+
+
+
+
 /* Responsive-For-Phone */
 @media screen and (max-width:576px) {
 
@@ -234,5 +307,37 @@
 
    .number-p {
       font-size: 14px;
+   }
+
+   /* reason-section */
+   .unknown {
+
+      grid-template-areas:
+         "first-layout"
+         "second-layout"
+         "third-layout"
+         "fourth-layout"
+         "fifth-layout"
+   }
+
+   .first-all {
+      margin-top: 0;
+   }
+
+   .unknown {
+      margin-top: 60px;
+   }
+   .unknown{
+      margin: 20px;
+   }
+
+   .grid-heading {
+      font-size: 30px;
+      padding-top: 50px;
+      padding-bottom: 10px;
+   }
+
+   .grid-section {
+      padding-bottom: 70px;
    }
 }
