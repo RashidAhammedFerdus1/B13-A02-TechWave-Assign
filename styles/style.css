@@ -1,0 +1,128 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+/* Navbar */
+.inter {
+   font-family: "Inter", sans-serif;
+   font-optical-sizing: auto;
+}
+
+.display-flex {
+   display: flex;
+}
+
+.nav-bar{
+   margin: 0 auto;
+   background-color: #1A0B2E;
+   padding: 24px 200px;
+   justify-content: space-between;
+
+}
+
+.nav-list {
+   list-style: none;
+   margin: 0px 314px 0px 314px;
+   gap: 32px;
+   align-items: center;
+   font-size: 16px;
+   font-weight: medium;
+}
+
+.lista {
+   text-decoration: none;
+   color: #ffffff;
+}
+
+.button {
+   color: white;
+   background: linear-gradient(90deg, #F7E93F 0%, #FB09B4 51%, #9100F8 100%);
+   padding: 10px;
+   border-radius: 20px;
+   border: none;
+   font-weight: 600px;
+   font-size: 16px;;
+}
+.responsive-logo{
+   display: none;
+}
+
+/* hero-section */
+.container {
+   padding: 101px 625px 309px 625px;
+   background: url("../images/hero-bg.png") center no-repeat;
+   background-size: cover;
+   width: 100%;
+}
+
+.hero-circle {
+   justify-content: center;
+   list-style: none;
+   margin-top: 100px;
+}
+
+.microphone {
+   margin-left: -235px;
+   margin-top: 80px;
+}
+.techwave{
+   font-size: 3.75rem;
+   text-align: center;
+   color: #ffffff;
+   font-weight: bolder;
+}
+.paragraph{
+   font-size: 1rem;
+   color: #ffffff;
+   text-align: center;
+   font-weight: lighter;
+   padding: 24px 0px;
+}
+.hero-text{
+   margin-top: 40px;
+}
+.buttontwo{
+   list-style: none;
+   justify-content: center;
+   gap: 8px;
+}
+.spotify{
+   color: white;
+   font-size: 1rem;
+   padding: 13px;
+   background: linear-gradient(90deg, #F7E93F 0%, #FB09B4 51%, #9100F8 100%);
+   border-radius: 30px;
+   border: none;
+}
+.subscribe{
+   padding: 13px;
+   font-size: 1rem;
+   color: #00FF88;
+   background-color: transparent;
+   border-color: #00FF88;
+   border-radius: 30px;
+}
+
+@media screen and (max-width:576px) {
+   .nav-bar{
+      flex-direction: row;
+      padding: 30px;
+      align-items: center;
+   }
+   .nav-list, .button{
+      display: none;
+   }
+   .responsive-logo{
+      display: initial;
+      visibility: visible;
+      margin-left: 100px;
+   }
+
+   .container{
+      padding: 50px;
+   }
+   .hero-circle{
+      margin-top: 50px;
+   }
+}
