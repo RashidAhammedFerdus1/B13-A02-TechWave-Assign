@@ -254,6 +254,7 @@
       "first-layout third-layout third-layout third-layout"
       "fourth-layout fourth-layout fourth-layout fifth-layout"
 }
+
 /* Link-section */
 #featured-episode {
    max-width: 1600px;
@@ -261,7 +262,6 @@
    display: grid;
    grid-template-columns: repeat(3, 1fr);
    gap: 30px;
-   padding-bottom: 120px;
 }
 
 .featured {
@@ -314,6 +314,86 @@
    line-height: 24px;
    color: #00FF88;
 }
+/* footer-last */
+
+.section-done {
+   background-color: #230e3d;
+}
+
+.lastone {
+   max-width: 1600px;
+   background-color: #250d44;
+   border-radius: 20px;
+}
+
+.meet-host {
+   text-align: center;
+   background-color: #230e3d;
+   padding-bottom: 50px;
+   color: #ffffff;
+   font-size: 25px;
+}
+
+.lastone {
+   margin: 0 auto;
+   display: flex;
+   justify-content: center;
+   padding: 50px;
+}
+
+.name-info {
+   padding: 30px 0px 0px 30px;
+}
+
+.name-info h2 {
+   color: #ffffff;
+   padding-bottom: 10px;
+}
+
+.name-info p {
+   color: #ffffff;
+   font-weight: lighter;
+   gap: 5px;
+}
+
+.image-border {
+   padding: 10px;
+   border: 1px solid #ffffff15;
+   border-radius: 50%;
+}
+/* footer  */
+.footer-one{
+   background-image: url(../images/footer-bg.png);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+}
+.logo-footer{
+   text-align: center;
+   padding-top: 100px;
+   
+}
+.icon-footer{
+   display: flex;
+   justify-content: center;
+   padding-top: 30px;
+   padding-bottom: 60px;
+}
+.icon-card{
+   display: flex;
+   gap: 10px;
+}
+.dj{
+   color: #ffffff;
+}
+.lastfor{
+      text-align: center;
+      color: white;
+      margin-top: -30px;
+      padding-bottom: 50px;
+   }
+
+
 /* Responsive-For-Phone */
 @media screen and (max-width:576px) {
 
@@ -383,7 +463,8 @@
    .unknown {
       margin-top: 60px;
    }
-   .unknown{
+
+   .unknown {
       margin: 20px;
    }
 
@@ -396,6 +477,7 @@
    .grid-section {
       padding-bottom: 70px;
    }
+
    /* link-section */
    .featured {
       padding-top: 30px;
@@ -412,6 +494,14 @@
 
    .featured {
       font-size: 32px;
+   }
+   /* footer-last */
+   .lastone{
+      flex-direction: column;
+      align-items: center;
+   }
+   .footer-one{
+      
    }
 
 }
